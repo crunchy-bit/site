@@ -1,0 +1,359 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crunchy Bit</title>
+
+<link rel="stylesheet" type="text/css" href="reset.css">
+<link rel="stylesheet" type="text/css" href="grid.css">
+<link rel="stylesheet" type="text/css" href="style-general.css">
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 799px)" href="style-mobile.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 800px)" href="style-desktop.css">
+
+
+</head>
+
+<body>
+
+<!-- NAVIGATION BAR -->
+
+<header>
+
+	<div id="nav-bar">
+
+	<a href="#" id="logo-icon"><img src="img/cb-logo-icon.png"></a>
+	<a href="#" id="logo-full"><img src="img/cb-logo.png"></a>
+	<button id="menu-icon" onclick="myFunction()"><img src="img/menu-icon.png"></button>
+
+
+	<a href="#" class="menu-items" id="menu-about">About Us</a>	
+	<a href="#" class="menu-items" id="menu-industries">Industries</a>
+	<a href="#" class="menu-items" id="menu-services">Services</a>
+
+	</div>
+
+</header>
+
+<!-- MOBILE MENU -->
+
+	<div id="mobile-menu">
+
+		<div class="mobile-menu-spacer"></div>
+
+		<div class="mobile-menu-rows">
+			<a href="#" class="mobile-menu-items" id="mobile-menu-about">About Us</a>
+		</div>
+
+		<div class="mobile-menu-rows">
+			<a href="#" class="mobile-menu-items" id="mobile-menu-industries">Industries</a>
+		</div>
+
+		<div class="mobile-menu-rows">
+			<a href="#" class="mobile-menu-items" id="mobile-menu-services">Services</a>
+		</div>
+		
+	</div>
+
+
+
+<!-- COVER -->
+
+<section id="cover">
+
+	<div id="cover-contents">
+	<img id="cover-phone" src="img/phone-image-small.png">
+	<h1 id="cover-title">Getting software developed doesn't always have to be complicated!</h1>
+	<a href="#" class="button">Get a free estimate</a>
+
+	</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+
+	<h2 class="title" id="services-title">Our Services</h2>
+	<hr/>
+	<p class="text" id="services-text">
+	From designs to development, if it involves software, we can help. Whether you're looking to rebuild a large, production application from the ground up or simply have an idea and need someone to work through the design process, we can help you out.</p>
+
+<!--
+	<div id="services-carousel">
+	
+		<div class="carousel-card">
+			<p class="card-icon"> /// </p>
+			<p class="card-title">Web App Development</p>
+			<p class="card-text">
+			Our experience building well designed, feature rich, and high performance projects mean development with peace of mind. Our designers, analysts, and developers deliver working solutions.</p>
+		</div>
+
+	</div>
+
+-->
+
+	<div id="services-grid">
+		
+		<div class="services-grid-card" id="services-1">
+			<p class="card-icon"> /// </p>
+			<p class="card-title">App Development</p>
+			<p class="card-text">
+			Our experience building well designed, feature rich, and high performance projects mean development with peace of mind. Our designers, analysts, and developers deliver working solutions.</p>
+		</div>
+
+		<div class="services-grid-card" id="services-2">
+			<p class="card-icon"> /// </p>
+			<p class="card-title">Design and Analysis</p>
+			<p class="card-text">
+			Our team works closely with yours to flesh out every detail so we build it right the first time. This means no surprises during development, no budget overruns, and an on-time delivery.</p>
+		</div>
+
+		<div class="services-grid-card" id="services-3">
+			<p class="card-icon"> /// </p>
+			<p class="card-title">RFP & Proposal Writing</p>
+			<p class="card-text">
+			Have a big project and don't know where to start? We can work with you to understand your needs and create winning requests and responses that set clear expectations and win bids.</p>
+		</div>
+
+		<div class="services-grid-card" id="services-4">
+			<p class="card-icon"> /// </p>
+			<p class="card-title">Rebuilds and Upgrades</p>
+			<p class="card-text">
+			We're happy to work with existing code and have experience in a range of technologies. From small fixes to ground-up rebuilds we're happy to jump in and get you where you need to go.</p>
+		</div>
+
+	</div>
+
+	<a href="#" class="button">See all services</a>
+
+</section>
+
+
+<!-- INDUSTRIES -->
+
+<section class="grey-bg" id="industries">
+
+	<h2 class="title" id="industries-title">Industries</h2>
+	<hr/>
+	<p class="text" id="industries-text">
+	From enterprise accounting systems to smartphone entertainment apps if you need something designed, built, tracked, scheduled, or automated - we can help. Our team has experience across a wide variety of industries.</p>
+
+	<!-- Carousel -->
+	<div id="industries-carousel">
+
+	  <!-- Next and previous buttons -->
+		<div class="carousel-buttons">
+			<div class="prev" onclick="plusSlides(-1)">
+				<img src="img/previous.svg">
+			</div>
+			<div class="next" onclick="plusSlides(1)">
+				<img src="img/next.svg">
+			</div>
+		</div>
+
+	  <!-- Full-width images with number text -->
+	<div class="mySlides" id="carousel-tourism">
+	  	<div class="slide-contents">
+		  	<div class="slide-title">
+		      Tourism and Hospitality
+		    </div> 
+		    <div class="slide-text">
+		      Having worked with tourism organizations across Canada, our team understands what guests want and need. From restauraunts and hotels to activities and events, our team knows how to make stand-out solutions.
+		    </div>
+	  	</div>
+	</div>
+
+	<div class="mySlides" id="carousel-finance">
+		<div class="slide-contents">
+			<div class="slide-title">
+		      Finance and Accounting
+		    </div>
+		    <div class="slide-text">
+		      We've worked in the financial sector so we know what precision and high security look like. If you need a team who can explain how to build a secure system from the ground up then you've found the right developers.
+		    </div>
+		</div>
+	</div>
+
+	</div>
+
+</section>
+
+<!-- CLIENTS -->
+
+<section id="clients">
+
+	<h2 class="title" id="clients-title">Featured Clients</h2>
+	<hr/>
+
+	<div id="clients-grid">
+
+		<a href="#" class="clients-grid-card">
+			<img id="clients-1" src="img/clients-1.png">
+		</a>
+
+		<a href="#" class="clients-grid-card">
+			<img id="clients-2" src="img/clients-1.png">
+		</a>
+
+		<a href="#" class="clients-grid-card">
+			<img id="clients-3" src="img/clients-1.png">
+		</a>
+
+		<a href="#" class="clients-grid-card">
+			<img id="clients-4" src="img/clients-1.png">
+		</a>
+
+		<a href="#" class="clients-grid-card">
+			<img id="clients-5" src="img/clients-1.png">
+		</a>
+
+		<a href="#" class="clients-grid-card">
+			<img id="clients-6" src="img/clients-1.png">
+		</a>					
+
+	</div>
+
+</section>
+
+<!-- LOCATIONS - ORIGINAL - SEE ALT BELOW -->
+
+<section class="grey-bg" id="locations">
+
+	<h2 class="title" id="locations-title">Our Locations</h2>
+	<hr/>
+
+	<div class="locations-breaker"></div>
+			
+		<div class="locations-box">
+			<div class="locations-card" id="vancouver-card">
+				<p class="locations-card-title">Vancouver</p>
+				<p class="locations-card-text">Design & Development</p>
+			</div>
+		</div>
+
+		<div class="locations-box">
+			<div class="locations-card" id="victoria-card">
+				<p class="locations-card-title">Victoria</p>
+				<p class="locations-card-text">Business Analysis</p>
+			</div>
+		</div>
+
+		<p class="text" id="locations-card-description">We provide end-to-end software and mobile application development services. We take you from creating the concept and design, through to developing and delivering the final product that will delight your customers.</p>
+
+	<div class="locations-breaker"></div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+	<h2 class="title" id="contact-title">Let's get to work</h2>
+	<hr/>
+
+		<div id="contact-form">
+
+			<form action="#" target="_self" method="post" id="form-box">
+			
+			<textarea type="text" class="form-contact-box" id="form-message-box" name="form-message-box" placeholder="Your message"></textarea>
+			<br>
+			<input type="text" class="form-contact-box" id="form-services-box" name="form-services-box" placeholder="Services required">
+			<br>
+			<input type="text" class="form-contact-box" id="form-name-box" name="form-name-box" placeholder="Your name">
+			<br>
+			<input type="text" class="form-contact-box" id="form-email-box" name="form-email-box" placeholder="Your email address">
+			<br>
+			<input type="submit" class="button" id="form-button" value="Let's talk">
+			
+			</form>
+
+		</div>
+
+<!--			
+			<div class="contact-box" id="message-box">
+				<p>Your message</p>
+			</div>
+
+			<div class="contact-box" id="services-box">
+				<p>Services required</p>
+			</div>
+
+			<div class="contact-box" id="name-box">
+				<p>Your name</p>
+			</div>
+
+			<div class="contact-box" id="email-box">
+				<p>Your email address</p>
+			</div>
+
+
+
+		</div>
+
+	<a href="#" class="button">Let's talk</a>
+
+-->
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+	
+		<a href="#"><img src="img/cb-logo.png"></a>
+
+		<div class="footer-text">
+
+			<div class="footer-nav">
+				<a href="#" class="footer-items">Services</a>
+				<a href="#" class="footer-items">Industries</a>
+				<a href="#" class="footer-items">About Us</a>
+			</div>
+
+			<p>© 2020 Split a Bit<br>Proudly Built and Operated in Canada</p>
+
+		</div>
+
+</footer>
+
+</body>
+
+<script>
+
+// TOGGLE MENU SCRIPT
+
+function myFunction() {
+  var x = document.getElementById("mobile-menu");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+// CAROUSEL SCRIPT
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex-1].style.display = "block";
+}
+
+</script>
+
+</html>

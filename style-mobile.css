@@ -1,0 +1,461 @@
+
+/*
+--------------
+MOBILE GENERAL SETTINGS
+--------------
+*/
+
+
+/*
+MOBILE TITLES AND TEXT LAYOUT
+*/
+
+
+.title {
+	padding: 2.5em 0 1em 0;
+}
+
+.text {
+	padding: 1.5em 0 1em 0;
+	margin: 0 auto;
+	color: #444444;
+
+	max-width: 25em;
+	min-width: 18em;
+}
+
+#cover-phone {
+	display: none;
+}
+
+
+
+/* --- SMALLEST RESTYLING --- */
+
+@media only screen and (max-width: 420px) {
+	.text {
+		font-size: 1.4em;
+		line-height: 2em;
+		width: 21em;
+
+		margin: 0 auto;
+	}
+
+}
+
+
+/* --- TABLET RESTYLING --- */
+
+@media only screen and (min-width: 550px) {
+	.text {
+		font-size: 1.6em;
+		line-height: 2em;
+		width: 50em;
+
+		margin: 0 auto;
+	}
+
+}
+
+
+/*
+--------------
+MOBILE INDIVIDUAL ELEMENT STYLING
+--------------
+*/
+
+
+/*
+HEADER
+*/
+
+header {
+	padding: 2em;
+}
+
+#menu-icon {
+	float: right;
+}
+
+#logo-full {
+	display: none;
+}
+
+.menu-items {
+	display: none;
+}
+
+
+/* --- TABLET RESTYLING --- */
+
+@media only screen and (min-width: 425px) {
+	header {
+		padding: 2em 4em;
+	}
+}
+
+@media only screen and (min-width: 375px) {
+	#logo-icon {
+		display: none;
+	}
+
+	#logo-full {
+		display: inline-block;
+	}
+}
+
+@media only screen and (min-width: 650px) {
+	#menu-icon {
+		display: none;
+	}
+
+	.menu-items {
+	display: inline-block;
+	}
+}
+
+
+/*
+MOBILE-MENU
+*/
+
+
+
+#mobile-menu {
+	display: none;
+	position: absolute;
+
+	top: 0;
+	right: 0;
+	z-index: 90;
+
+	width: 15em;
+	height: 60em;
+	background-color: #222222;
+}
+
+.mobile-menu-spacer {
+	height: 9em;
+}
+
+.mobile-menu-rows {
+	height: 5em;
+	padding-right: 4em;
+	margin-bottom: 0.1em;
+}
+
+.mobile-menu-rows:hover {
+	background-image: linear-gradient(165deg, #FA6A63, #F4B22D);
+}
+
+.mobile-menu-items {
+	float: right;
+	font-size: 1.6em;
+	padding: 1em 0;
+}
+
+
+
+/*
+COVER
+*/
+
+#cover {
+	height: 60em;
+	text-align: center;
+}
+
+#cover-title {
+	margin: 0 auto 0 auto;
+	padding: 5.5em 0 1em 0;
+	width: 9em;
+}
+
+@media only screen and (min-width: 500px) {
+	#cover-title {
+		width: 12em;
+		padding: 6em 0 1em 0;
+	}
+}
+
+
+/*
+--------------
+CAROUSEL STYLING
+--------------
+*/
+
+#services-carousel {
+	margin: 2em 0 4.5em 0;
+}
+
+#services-grid {
+	margin: 4em auto 6em auto;
+	max-width: 76.8em;
+}
+
+.services-grid-card {
+	width: 30em;
+	height: 32.5;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+.card-text {
+font-size: 1.4em;
+width: 18em;
+margin: auto;
+margin-bottom: 2em;
+}
+
+/* --- TABLET RESTYLING --- */
+
+@media only screen and (min-width: 500px) {
+
+	.services-grid-card {
+		width: 30em;
+		height: 32.5;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+	}
+
+	.card-text {
+		font-size: 1.4em;
+		width: 18em;
+		margin: auto;
+		margin-bottom: 2em;
+	}
+
+}
+
+
+/*
+--------------
+SLIDER STYLING
+--------------
+*/
+
+
+/* SLIDER OVERALL SETTINGS */
+
+#industries-carousel {
+	position: relative;
+	height: 32em;
+}
+
+/* SLIDER BUTTONS */
+
+@media only screen and (max-width: 600px) {
+
+	.carousel-buttons {
+		position: absolute;
+		height: 32em;
+		width: 90%;
+	}
+
+	.prev,
+	.next {
+	 	cursor: pointer;
+		height: 4em;
+		width: 4em;
+	 	margin: 13.5em 0;
+	}
+
+} 
+
+
+
+/* SLIDER CONTENT STYLING */
+
+@media only screen and (max-width: 356px) {
+
+	.slide-title {
+		font-size: 2em;
+		line-height: 1.25em;
+		font-weight: 800;
+		margin-top: 0.1em;
+		padding: 2em 0 0 0;
+	}
+
+	.slide-text {
+		font-size: 1.2em;
+		color: #FFFFFF;
+		width: 16em;
+		margin: 1em auto 0 auto;
+		line-height: 2em;
+	}
+
+}
+
+@media only screen and (min-width: 357px) {
+
+	.slide-title {
+		padding: 2.5em 0 0 0;
+	}
+
+}
+
+/* --- TABLET RESTYLING --- */
+
+@media only screen and (min-width: 500px) {
+
+	.slide-title {
+		padding: 3.25em 0 0 0;
+	}
+
+	.slide-text {
+	font-size: 1.4em;
+	width: 22em;
+	}
+
+}
+
+
+
+/*
+CLIENTS DECK
+*/
+
+
+
+
+
+/*
+LOCATIONS CAROUSEL - SEE STYLE-GENERAL.CSS FOR CONTENTS + TYPOGRAPHY
+*/
+
+#locations-carousel {
+	margin: 3em 0 0 0;
+}
+
+
+
+
+/*
+CONTACT FORM - SEE STYLE-GENERAL.CSS FOR STYLING
+*/
+
+#contact-form {
+	margin: 3em 0 4em 0;
+}
+
+.contact-box {
+	margin: 1.5em auto 0 auto;
+
+	min-width: 25em;
+	max-width: 40em;
+	width: 60%
+}
+
+.contact-box p {
+	text-align: left;
+	padding: 1em 0 1em 1em;
+	color: #888888;
+
+	font-size: 1.2em;
+}
+
+#message-box {
+	height: 15em;
+}
+
+#message-box, #services-box, #name-box, #email-box {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);	
+}
+
+
+/* FORM BOX ATTEMPT */
+
+input, textarea {
+	margin: 1.5em auto 0 auto;
+
+	min-width: 25em;
+	max-width: 40em;
+	width: 60%;
+
+	text-align: left;
+	padding: 1em;
+	color: #888888;
+
+	font-size: 1.2em;
+
+	outline: none;
+	border: none;
+	border-radius: 5px;
+
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);	
+}
+
+textarea {
+	height: 15em;
+}
+
+
+/* PLACEHOLDER EFFECTS */
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+
+textarea:focus::placeholder {
+  color: transparent;
+}
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+textarea:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+
+#form-button {
+	font-family: "Ubuntu", sans-serif;
+	width: 12.5em;
+	min-width: 12.5em;
+	max-width: 12.5em;
+	height: 3em;
+}
+
+
+
+/*
+FOOTER
+*/
+
+footer {
+	text-align: center;
+	padding-top: 4em;
+	padding-bottom: 1.5em;
+}
+
+.footer-text {
+	margin: 3em auto;
+	width: 25em;
+}
+
+.footer-nav {
+	margin-top: 3em;
+	margin-bottom: 3em;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-nav a {
+	font-size: 1.6em;
+}
+
+.footer-text p {
+	color: #9B9B9B;
+	font-size: 1.4em;
+	line-height: 1.4em;
+}
+
+footer {
+	background-color: #222222;
+	color: white;
+}
+
+
