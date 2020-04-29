@@ -4,12 +4,6 @@ DESKTOP GENERAL SETTINGS
 --------------
 */
 
-/*
-DESKTOP TITLES AND TEXT LAYOUT
-*/
-
-
-
 .title {
 	padding: 2.5em 0 1em 0;
 }
@@ -24,6 +18,7 @@ DESKTOP TITLES AND TEXT LAYOUT
 	line-height: 2em;
 	width: 40em;
 }
+
 
 /*
 --------------
@@ -45,11 +40,13 @@ header {
 	max-width: 90em;
 }
 
-#logo-icon, #menu-icon {
+#logo-icon, 
+#menu-icon {
 	display: none;
 }
 
-#logo-full, .menu-items {
+#logo-full, 
+.menu-items {
 	display: inline-block;
 }
 
@@ -57,6 +54,8 @@ header {
 /*
 COVER
 */
+
+/* HOME COVER */
 
 #cover {
 	height: 60em;
@@ -79,10 +78,40 @@ COVER
 	padding-top: 13em;
 }
 
+/* ABOUT COVER */
+
+#cover-about {
+	height: 20em;
+	text-align: center;
+}
+
+#cover-about-contents {
+	margin: auto;
+	padding: 12em 0 0 0;
+	height: 20em;
+	width: 100%;
+}
+
+#cover-about-title {
+	font-size: 3em;
+}
+
+/*
+VALUES SECTION
+*/
+
+#values {
+	height: 105em;
+}
+
 
 /*
 SERVICES CAROUSEL - SEE STYLE-GENERAL.CSS FOR CONTENTS + TYPOGRAPHY
 */
+
+.mobile-br {
+	display: none;
+}
 
 #services-carousel {
 	margin: 2em 0 4.5em 0;
@@ -141,7 +170,6 @@ CONTACT FORM - SEE STYLE-GENERAL.CSS FOR STYLING
 
 .contact-box {
 	margin: 1.5em auto 0 auto;
-
 	min-width: 25em;
 	max-width: 40em;
 	width: 60%
@@ -151,7 +179,6 @@ CONTACT FORM - SEE STYLE-GENERAL.CSS FOR STYLING
 	text-align: left;
 	padding: 1em 0 1em 1em;
 	color: #888888;
-
 	font-size: 1.2em;
 }
 
@@ -159,11 +186,15 @@ CONTACT FORM - SEE STYLE-GENERAL.CSS FOR STYLING
 	height: 15em;
 }
 
-#message-box, #services-box, #name-box, #email-box {
+#message-box,
+#services-box,
+#name-box,
+#email-box {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);	
 }
 
-/* FORM BOX ATTEMPT */
+
+/* FORM BOX */
 
 input, textarea {
 	margin: 1.5em auto 0 auto;
@@ -189,29 +220,6 @@ textarea {
 	height: 15em;
 }
 
-
-/* PLACEHOLDER EFFECTS */
-
-input:focus::placeholder {
-  color: transparent;
-}
-
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
-input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
-input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
-
-
-textarea:focus::placeholder {
-  color: transparent;
-}
-
-textarea:focus::-webkit-input-placeholder { color:transparent; }
-textarea:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
-textarea:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
-textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
-
-
 #form-button {
 	font-family: "Ubuntu", sans-serif;
 	width: 12.5em;
@@ -219,6 +227,49 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 	max-width: 12.5em;
 	height: 3em;
 }
+
+
+/* PLACEHOLDER EFFECTS */
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+input:focus::-webkit-input-placeholder {
+	color:transparent;
+}
+
+input:focus:-moz-placeholder {
+	color:transparent;
+} /* FF 4-18 */
+
+input:focus::-moz-placeholder {
+	color:transparent;
+} /* FF 19+ */
+
+input:focus:-ms-input-placeholder {
+	color:transparent;
+} /* IE 10+ */
+
+textarea:focus::placeholder {
+  color: transparent;
+}
+
+textarea:focus::-webkit-input-placeholder {
+	color:transparent;
+}
+
+textarea:focus:-moz-placeholder {
+	color:transparent;
+} /* FF 4-18 */
+
+textarea:focus::-moz-placeholder {
+	color:transparent;
+} /* FF 19+ */
+
+textarea:focus:-ms-input-placeholder {
+	color:transparent;
+} /* IE 10+ */
 
 
 /*
@@ -237,8 +288,7 @@ footer {
 }
 
 .footer-nav {
-	margin-top: 3em;
-	margin-bottom: 3em;
+	margin: 3em 0;
 	display: flex;
 	justify-content: space-between;
 }
@@ -252,30 +302,5 @@ footer {
 	font-size: 1.4em;
 	line-height: 1.4em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

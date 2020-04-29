@@ -10,14 +10,13 @@ FONTS
 
 /*
 --------------
-BASIC FIXES & SETTINGS
+GENERAL FIXES & SETTINGS
 --------------
 */
 
 * {
 	box-sizing: border-box;
 }
-
 
 body {
 	font-family: 'Ubuntu', sans-serif;
@@ -29,49 +28,8 @@ img {
 	height: auto;
 }
 
-header {
-	position: absolute;
-	width: 100%;
-}
-
-/*
-body {
-	position: absolute;
-	width: 100vw;
-}
-*/
-
 .grey-bg {
 	background-color: #FAFAFA;
-}
-
-
-/* unvisited link */
-a:link {
-  color: white;
-}
-
-/* visited link */
-a:visited {
-  color: white;
-}
-
-/* mouse over link */
-a:hover {
-  color: white;
-}
-
-/* selected link */
-a:active {
-  color: white;
-}
-
-.menu-items:hover {
-  color: #FF9C94;
-}
-
-.footer-items:hover {
-  color: #FF9C94;
 }
 
 
@@ -94,6 +52,7 @@ h1 {
 h2 {
 	font-size: 2.5em;
 	font-weight: 900;
+	line-height: 1.4em;
 }
 
 p {
@@ -118,38 +77,20 @@ hr {
 	padding: 1em 0 0 2em;
 }
 
-/*
---------------
-MOBILE MENU
---------------
-*/
+/* LINKS */
 
-#mobile-menu {
-	display: none;
+/* unvisited, visited, hover and selected */
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: white;
 }
 
-@media only screen and (min-width: 650px) {
-	#mobile-menu {
-	/*	display: none; */
-	}
+.menu-items:hover,
+.footer-items:hover {
+  color: #FF9C94;
 }
-
-
-
-/*
---------------
-COVER IMAGES
---------------
-*/
-
-#cover {
-	background-image: url(img/cover-image.png);
-	background-position: top;
-	background-attachment: fixed;
-	background-size: cover;
-	color: #FFF;
-}
-
 
 
 /*
@@ -176,7 +117,6 @@ BUTTONS
 	margin-bottom: 3em;
 }
 
-
 #menu-icon {
 	background: none;
 	outline: 0;
@@ -191,14 +131,66 @@ BUTTONS
 
 
 /*
+---------------------------------------------
+-------------- SECTION STYLING --------------
+---------------------------------------------
+*/
+
+
+/*
 --------------
-CAROUSEL STYLING
+HEADER
+--------------
+*/
+
+header {
+	position: absolute;
+	width: 100%;
+}
+
+#mobile-menu {
+	display: none;
+}
+
+
+/*
+--------------
+COVER
+--------------
+*/
+
+#cover {
+	background-image: url(img/cover-image.png);
+	background-position: top;
+	background-attachment: fixed;
+	background-size: cover;
+	color: #FFF;
+}
+
+#cover-about {
+	background-image: url(img/cover-about-image.png);
+	background-position: top;
+	background-attachment: fixed;
+	background-size: cover;
+	color: #FFF;	
+}
+
+
+/*
+--------------
+SERVICES CARDS STYLING
 --------------
 */
 
 #services-grid {
 	margin: 4em auto 6em auto;
 	max-width: 76.8em;
+}
+
+.carousel-slide {
+	color: white;
+	background-size: cover;
+	background-position: center;
 }
 
 .services-grid-card {
@@ -212,15 +204,6 @@ CAROUSEL STYLING
 	width: 25em;
 	height: 32.5em;
 	margin: 1em;
-}
-
-@media only screen and (min-width: 500px) {
-
-	.services-grid-card {
-		width: 30em;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
-	}
-
 }
 
 .card-icon {
@@ -242,30 +225,27 @@ CAROUSEL STYLING
 	margin: 1em auto 2.5em auto;
 }
 
-.carousel-slide {
-	color: white;
-	background-size: cover;
-	background-position: center;
-}
+@media only screen and (min-width: 500px) {
 
+	.services-grid-card {
+		width: 30em;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+	}
+
+}
 
 
 /*
 --------------
-SLIDER STYLING
+INDUSTRY CAROUSEL STYLING
 --------------
 */
-
-
-/* SLIDER OVERALL SETTINGS */
 
 #industries-carousel {
 	margin-top: 2em;
 	position: relative;
 	height: 32em;
 }
-
-/* SLIDER BUTTONS */
 
 .carousel-buttons {
 	position: absolute;
@@ -296,7 +276,6 @@ SLIDER STYLING
 .next {
 	float: right;
 }
-
 
 
 /* SLIDER CONTENT STYLING */
@@ -343,17 +322,23 @@ SLIDER STYLING
 	height: 32em;
 }
 
+
+/* SLIDER CONTENTS */
+
+#carousel-tourism,
+#carousel-finance {
+	background-size: cover;
+	background-position: center;	
+}
+
 #carousel-tourism {
 	background-image: url(img/tourism-image.png);
-	background-size: cover;
-	background-position: center;
 }
 
 #carousel-finance {
 	background-image: url(img/finance-image.png);
-	background-size: cover;
-	background-position: center;
 }
+
 
 /*
 --------------
@@ -380,16 +365,6 @@ CLIENTS CONTENTS
 }
 
 
-@media only screen and (min-width: 500px) {
-
-	.clients-grid-card {
-		width: 19em;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
-	}
-
-}
-
-
 #clients-1,
 #clients-2,
 #clients-3,
@@ -399,7 +374,18 @@ CLIENTS CONTENTS
 	padding: 3.25em 0em;
 }
 
+
+
 @media only screen and (min-width: 500px) {
+
+	.clients-grid-card {
+		width: 19em;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+	}
+}
+
+@media only screen and (min-width: 500px) {
+
 	#clients-1,
 	#clients-2,
 	#clients-3,
@@ -409,6 +395,7 @@ CLIENTS CONTENTS
 		padding: 4em 0em;
 	}	
 }
+
 
 /*
 --------------
@@ -433,36 +420,43 @@ LOCATIONS CARDS
 	margin: auto;
 	padding: 4em 0;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
 	color: white;
 }
 
-#vancouver-card {
-	background-image: url(img/vancouver-card.png);
-	background-size: cover;
+.locations-card-title,
+.locations-card-text {
+	font-weight: 800;
 }
-
-#victoria-card {
-	background-image: url(img/victoria-card.png);
-	background-size: cover;
-}
-
 
 .locations-card-title {
 	font-size: 2.5em;
-	font-weight: 800;
 	margin: 0 auto -0.5em auto;
 }
 
 .locations-card-text {
 	font-size: 1.6em;
-	font-weight: 800;
 }
+
+#vancouver-card,
+#victoria-card {
+	background-size: cover;
+}
+
+#vancouver-card {
+	background-image: url(img/vancouver-card.png);
+}
+
+#victoria-card {
+	background-image: url(img/victoria-card.png);
+}
+
+
 
 @media only screen and (min-width: 500px) {
 
-.locations-card {
-	width: 30em;
+	.locations-card {
+		width: 30em;
+	}
 }
 
 
@@ -477,8 +471,6 @@ CONTACT FORM
 	border-radius: 5px;
 }
 
-
-/* FORM BOX ATTEMPT */
 
 input, textarea {
 	margin: 1.5em auto 0 auto;
@@ -506,28 +498,6 @@ textarea {
 	height: 15em;
 }
 
-/* PLACEHOLDER EFFECTS */
-
-input:focus::placeholder {
-  color: transparent;
-}
-
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
-input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
-input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
-
-
-textarea:focus::placeholder {
-  color: transparent;
-}
-
-textarea:focus::-webkit-input-placeholder { color:transparent; }
-textarea:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
-textarea:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
-textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
-
-
 #form-button {
 	font-family: "Ubuntu", sans-serif;
 	width: 12.5em;
@@ -537,9 +507,51 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 }
 
 #form-button:hover {
-cursor: pointer;
-
+	cursor: pointer;
 }
+
+
+/* PLACEHOLDER EFFECTS */
+
+input:focus::placeholder {
+	color: transparent;
+}
+
+input:focus::-webkit-input-placeholder { 
+	color:transparent;
+}
+
+input:focus:-moz-placeholder { 
+	color:transparent; 
+} /* FF 4-18 */
+
+input:focus::-moz-placeholder {
+	color:transparent; 
+} /* FF 19+ */
+
+input:focus:-ms-input-placeholder {
+	color:transparent;
+} /* IE 10+ */
+
+textarea:focus::placeholder {
+  color: transparent;
+}
+
+textarea:focus::-webkit-input-placeholder {
+	color:transparent;
+}
+
+textarea:focus:-moz-placeholder {
+	color:transparent;
+} /* FF 4-18 */
+
+textarea:focus::-moz-placeholder {
+	color:transparent;
+} /* FF 19+ */
+
+textarea:focus:-ms-input-placeholder {
+	color:transparent; 
+} /* IE 10+ */
 
 
 
