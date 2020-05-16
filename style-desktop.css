@@ -164,8 +164,12 @@ LOCATIONS CAROUSEL - SEE STYLE-GENERAL.CSS FOR CONTENTS + TYPOGRAPHY
 CONTACT FORM - SEE STYLE-GENERAL.CSS FOR STYLING
 */
 
+#contact {
+	height: 70em;
+}
+
 #contact-form {
-	margin: 3em 0 4em 0;
+	margin: 3em 0 0 0;
 }
 
 .contact-box {
@@ -284,7 +288,7 @@ footer {
 
 .footer-text {
 	margin: 3em auto;
-	width: 25em;
+	width: 22.5em;
 }
 
 .footer-nav {

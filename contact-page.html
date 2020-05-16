@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Crunchy Bit | Contact</title>
+
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="style-general.css">
+<link rel="stylesheet" media="screen and (max-width: 799px)" href="style-mobile.css">
+<link rel="stylesheet" media="screen and (min-width: 800px)" href="style-desktop.css">
+</head>
+
+<body>
+
+
+<!-- NAV BAR -->
+
+<header>
+
+	<div id="nav-bar">
+
+	<a href="index.html" id="logo-icon"><img src="img/cb-logo-icon.png"></a>
+	<a href="index.html" id="logo-full"><img src="img/cb-logo.png"></a>
+	<button id="menu-icon" onclick="myFunction()"><img src="img/menu-icon.png"></button>
+
+	<a href="contact-page.html" class="menu-items" id="menu-industries">Contact</a>
+	<a href="about-page.html" class="menu-items" id="menu-about">About Us</a>	
+
+	</div>
+
+</header>
+
+
+<!-- MOBILE MENU -->
+
+<div class="mobile-menu-alt" id="mobile-menu" style="display: none;">
+
+	<div class="mobile-menu-spacer"></div>
+
+	<div class="mobile-menu-rows">
+		<a href="about-page.html" class="mobile-menu-items" id="mobile-menu-about">About Us</a>
+	</div>
+
+	<div class="mobile-menu-rows">
+		<a href="contact-page.html" class="mobile-menu-items" id="mobile-menu-industries">Contact</a>
+	</div>
+		
+</div>
+
+
+<!-- COVER -->
+
+<section id="cover-about">
+
+	<div id="cover-about-contents">
+	
+		<h1 id="cover-about-title">Contact Us</h1>		
+
+	</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+
+	<h2 class="title" id="services-title">Give us a Call</h2>
+	<hr/>
+	<p class="text" id="services-text">
+	From designs to development, if it involves software, we can help. Whether you're looking to rebuild a large, production application from the ground up we can help you out.</p>
+	<div class="button-spacer"></div>
+	<a href="tel:778-676-4900" class="button">Call now</a>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="grey-bg" id="contact">
+
+	<h2 class="title" id="contact-title">Send us an Email</h2>
+	
+	<hr/>
+
+	<!-- Contact Form -->
+
+	<div id="contact-form">
+
+		<form action="#" target="_self" method="post" id="form-box">
+			
+			<!-- Message Box -->
+
+			<textarea type="text" class="form-contact-box" id="form-message-box" name="form-message-box" placeholder="Your message"></textarea>
+			<br>
+
+			<!-- Services Box -->
+
+			<input type="text" class="form-contact-box" id="form-services-box" name="form-services-box" placeholder="Services required">
+			<br>
+
+			<!-- Name Box -->
+
+			<input type="text" class="form-contact-box" id="form-name-box" name="form-name-box" placeholder="Your name">
+			<br>
+
+			<!-- Email Box -->
+
+			<input type="text" class="form-contact-box" id="form-email-box" name="form-email-box" placeholder="Your email address">
+			<br>
+
+			<!-- Submit Button -->
+
+			<input type="submit" class="button" id="form-button" value="Let's talk">
+			
+		</form>
+
+	</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+	
+	<a href="index.html"><img src="img/cb-logo.png"></a>
+
+	<div class="footer-text">
+
+		<div class="footer-nav">
+			
+			<a href="index.html" class="footer-items">Home</a>			
+			<a href="about-page.html" class="footer-items">About Us</a>
+			<a href="#" class="footer-items">Contact</a>					
+		
+		</div>
+
+		<p>© 2020 Split a Bit<br>Proudly Built and Operated in Canada</p>
+
+	</div>
+
+</footer>
+
+
+</body>
+
+<script type="text/javascript">
+	
+// TOGGLE MENU SCRIPT
+
+function myFunction() {
+  var x = document.getElementById("mobile-menu");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+</script>
+
+</html>
