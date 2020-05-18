@@ -201,13 +201,13 @@ VALUES SECTION
 */
 
 #values {
-	height: 105em;
+	height: 110em;
 }
 
 @media only screen and (max-width: 642px) {
 
 	#values {
-		height: 175em;
+		height: 185em;
 	}
 }
 
