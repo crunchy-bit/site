@@ -401,6 +401,12 @@ CONTACT FORM - SEE STYLE-GENERAL.CSS FOR STYLING
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);	
 }
 
+/* --- CONTACT TEXT --- */
+
+#contact-text {
+	max-width: 20em;
+}
+
 
 /* FORM BOX ATTEMPT */
 
